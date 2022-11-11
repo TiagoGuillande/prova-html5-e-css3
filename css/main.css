@@ -1,0 +1,206 @@
+:root{
+    --corPrincipal: #043873;
+    --corSecunraria: #FFE492;
+    --corTerciaria: #4F9CF9;
+    font-family: 'Inter', sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+    .container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: row;
+        flex-direction: row;
+    }
+header{
+    display: flex;
+    background-color: var(--corPrincipal);
+}
+
+    nav{
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: space-between;
+        margin-right: 50px;
+    }
+        header nav ul{
+            display: flex;
+            flex-wrap: wrap;
+        }
+            header nav ul li{
+                flex-flow: row;
+                flex-direction: row;
+                justify-content: space-between;
+                padding: 10px;;
+                list-style: none;
+                color: white;
+            }
+
+        
+    .btnLogin{
+        font-family: 'Inter', sans-serif;
+        padding: 10px;
+        border: none;
+        background: #FFE492;
+        border-radius: 8px;
+        margin-right: 5px;
+        cursor: pointer;
+    }
+    .btTry{
+        font-family: 'Inter', sans-serif;
+        border: none;
+        background: #4F9CF9;
+        border-radius: 8px;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+
+
+    section{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-flow: column;
+        flex-direction: column;
+        background-color: var(--corPrincipal);
+        background-image: url(../imgs/Element.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 400px;
+    }
+ 
+        section .container{
+            width: 100%;
+            display: flex;
+            flex-flow: column;
+            flex-direction: column;
+            text-align: left;
+            color: white;
+        }
+
+    main{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column;
+        flex-direction: column;
+        padding: 30px;
+        margin-bottom: 50px;
+    }
+        main .container{
+            width: 70%;
+            display: flex;
+            flex-flow: row;
+            flex-direction: row;
+            text-align: left;
+        }
+
+        main .btTry{
+            font-family: 'Inter', sans-serif;
+            border: none;
+            background: #4F9CF9;
+            border-radius: 8px;
+            padding: 10px;
+            margin-top: 10px;
+            color: white;
+            cursor: pointer;
+        }
+
+    footer{
+        background-color: var(--corPrincipal);
+        display: flex;
+        position: fixed;
+        bottom:0;
+        width: 100%;
+    }
+
+    footer nav{
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: space-between;
+        margin-right: 50px;
+    }
+        footer nav ul{
+            display: flex;
+            flex-wrap: wrap;
+        }
+            footer nav ul li{
+                flex-flow: row;
+                flex-direction: row;
+                justify-content: space-between;
+                padding: 10px;
+                list-style: none;
+                color: white;
+                font-size: 12px;
+            }
+
+
+
+
+
+@media (max-width: 768px){
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column;
+        flex-direction: column;
+    }
+    .container picture{
+        display: flex;
+        justify-content: center;
+    }
+    header{
+        display: flex;
+        padding: 50px;
+    }
+    nav{
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        margin-right: 0 !important;
+    }
+    section{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-flow: column;
+        flex-direction: column;
+        padding: 30px;
+        height: 250px;
+    }
+
+    main{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column;
+        flex-direction: column;
+        padding: 30px;
+        margin-bottom: 50px;
+    }
+        main .container{
+            width: 100%;
+            display: flex;
+            flex-flow: column;
+            flex-direction: column;
+            text-align: center;
+            padding: 50px;
+        }
+
+  }
+
+
+
+
